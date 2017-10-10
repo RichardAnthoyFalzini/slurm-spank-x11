@@ -6,9 +6,12 @@ License: GPL
 Group: System Environment/Base
 Source0: %{name}-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
-
-BuildRequires: slurm-devel
-Requires: slurm
+###
+## change for work whit open-hpc
+#BuildRequires: slurm-devel
+#Requires: slurm
+BuildRequires: slurm-devel-ohpc
+Requires: slurm-ohpc
 
 %description
 x11 SLURM spank plugin enables to export X11 display on a part or all of the 
