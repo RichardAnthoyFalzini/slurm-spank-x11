@@ -31,10 +31,17 @@ vim /usr/lib/rpm/find-debuginfo.sh:
 
 rpmbuild -v -ba ~/rmpbuild/SPECS/slurm-spank-x11.spec
 
+if no error occurre you can find the rpm on:
+  ~/rpmbuild/RPMS/x86_64/slurm-spank-x11-0.2.5-1.x86_64.rpm
+
 if you whish you can ripristinate the file /usr/lib/rpm/find-debuginfo.sh
 
 ## Install 
+has to be done on all nodes, frontend and compute
+ensure that the file /etc/slurm/plugstack.conf exist and contain the line
+  include /etc/slurm/plugstack.conf.d/*
 
+then rpm --install ~/rpmbuild/RPMS/x86_64/slurm-spank-x11-0.2.5-1.x86_64.rpm
 
 ## Tests
 
