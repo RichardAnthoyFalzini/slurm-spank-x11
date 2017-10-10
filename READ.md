@@ -39,9 +39,12 @@ if you whish you can ripristinate the file /usr/lib/rpm/find-debuginfo.sh
 ## Install 
 has to be done on all nodes, frontend and compute
 ensure that the file /etc/slurm/plugstack.conf exist and contain the line
+```
   include /etc/slurm/plugstack.conf.d/*
+```
+then
 
-then rpm --install ~/rpmbuild/RPMS/x86_64/slurm-spank-x11-0.2.5-1.x86_64.rpm
+  rpm --install ~/rpmbuild/RPMS/x86_64/slurm-spank-x11-0.2.5-1.x86_64.rpm
 
 ## Tests
 
