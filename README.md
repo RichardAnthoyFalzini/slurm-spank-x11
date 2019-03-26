@@ -9,9 +9,11 @@ mkdir -p ~/rpmbuild/{BUILD,BUILDROOT,RPMS,SOURCES,SPECS,SRPMS}
 
 git clone https://github.com/RichardAnthoyFalzini/slurm-spank-x11.git
 
+```
 tar  -zcf slurm-spank-x11-0.2.5.tar.gz slurm-spank-x11-0.2.5
 mv slurm-spank-x11-0.2.5.tar.gz ~/rpmbuild/SOURCES/
 cp slurm-spank-x11/slurm-spank-x11.spec ~/rpmbuild/SPECS/
+```
 
 vim /usr/lib/rpm/find-debuginfo.sh:
 ```
