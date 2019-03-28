@@ -31,7 +31,7 @@ vim /usr/lib/rpm/find-debuginfo.sh:
       strict=false
       ;;
 ```
-rpmbuild -v -ba ~/rmpbuild/SPECS/slurm-spank-x11.spec
+rpmbuild -v -ba ~/rpmbuild/SPECS/slurm-spank-x11.spec
 
 if no error occurre you can find the rpm on:
   ~/rpmbuild/RPMS/x86_64/slurm-spank-x11-0.2.5-1.x86_64.rpm
